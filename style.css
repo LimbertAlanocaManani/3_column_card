@@ -1,0 +1,116 @@
+#root{
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    /*Primary*/ 
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /*Neutral*/
+    --transparent-white: hsla(0, 0%, 100%, 0.75); 
+    --very-light-gray: hsl(0, 0%, 95%); 
+}
+body{
+    padding: 15px;
+    color: var(--transparent-white);
+    background: var(--very-light-gray);
+}
+.main {
+    max-width: 340px;
+    border-radius: 10px; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;  
+    margin: auto;                                    
+}
+.card-content {
+    padding: 50px;
+    background-color: var(--bright-orange); 
+    transition: all .2s;
+}
+.image{
+    margin-bottom: 20px;
+}
+.tittle{
+    margin-bottom:20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--transparent-white);
+}
+.content{
+    font-size: 15.5px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--transparent-white);
+}
+.contain_button{
+    width: 155px;
+    height: 50px;
+    margin-top: 25px;
+}
+.button{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.suvs{
+    background: var(--dark-cyan);
+}
+.luxury{
+    background: var(--very-dark-cyan);
+}
+.one{
+    color: var(--bright-orange);
+}
+.two{
+    color: var(--dark-cyan);
+}
+.three{
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width:850px){
+    .main{
+        display: flex;
+        flex-direction: row;
+        min-width: 800px;
+        align-items: center;
+        height: 100vh;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    .card-content {
+        padding: 40px 40px;
+        
+    }
+    .contain_button{
+        width: 155px;
+        height: 50px;
+        
+    }
+    .contain_button{
+        margin-top: 80px;
+    }
+    .content{
+        font-size: 13px;
+    }
+    .button{
+        font-size: 14.5px;
+    }
+    .sedans{
+        border-radius: 10px 0 0 10px;
+    }
+    .luxury{
+        border-radius: 0 10px 10px 0;
+    }
+
+}
